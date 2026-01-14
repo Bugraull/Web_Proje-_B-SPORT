@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Spor sitesi ile iletişim kurun.">
+    <title>✉️ İletişim - SPOR SİTESİ</title>
+    
+    <link rel="stylesheet" href="../style.css"> 
+</head>
+<body>
+
+    <div id="header">
+        <h1>SPOR HABER PORTALI</h1>
+    </div>
+
+    <nav id="ustMenu">
+        <ul class="menu">
+            <li><a href="http://127.0.0.1:5500/htmlDosyalar%C4%B1/Ana%20Sayfa.html">ANA SAYFA</a></li>
+            <li class="alt-menulu">
+                <a href="http://127.0.0.1:5500/htmlDosyalar%C4%B1/s%C3%BCperlig.html">SÜPER LİG</a>
+                <ul class="alt-menu">
+                    <li><a href="http://127.0.0.1:5500/htmlDosyalar%C4%B1/fikst%C3%BCr.html">Fikstür</a></li>
+                    <li><a href="http://127.0.0.1:5500/htmlDosyalar%C4%B1/puan%20durumu.html">Puan Durumu</a></li>
+                </ul>
+            </li>
+            <li><a href="http://127.0.0.1:5500/htmlDosyalar%C4%B1/Avrupa%20Kupalar%C4%B1.html">AVRUPA KUPALARI</a></li>
+            <li><a href="http://127.0.0.1:5500/htmlDosyalar%C4%B1/Galeri.html">FOTOĞRAF GALERİSİ</a></li>
+            <li><a href="http://127.0.0.1:5500/htmlDosyalar%C4%B1/ileti%C5%9Fim.html">İLETİŞİM</a></li>
+        </ul>
+    </nav>
+    
+    <div id="anaIcerik" class="form-container"> 
+        
+        <h2 class="baslikKirmizi">Bize Ulaşın</h2>
+        
+        <div class="iletisim-sarmal"> 
+            
+            <form id="iletisimFormu">
+                
+                <div class="form-grup">
+                    <label for="ad">Adınız ve Soyadınız:</label>
+                    <input type="text" id="ad" name="ad" required>
+                </div>
+                
+                <div class="form-grup">
+                    <label for="email">E-posta Adresiniz:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-grup">
+                    <label for="konu">Konu:</label>
+                    <input type="text" id="konu" name="konu" required>
+                </div>
+                
+                <div class="form-grup">
+                    <label for="mesaj">Mesajınız:</label>
+                    <textarea id="mesaj" name="mesaj" rows="6" required></textarea>
+                </div>
+                
+                <button type="submit" id="gonderButon">Mesajı Gönder</button>
+                
+                <p id="mesajDurumu" style="display:none; color: green; font-weight: bold; text-align: center; margin-top: 20px;">
+                    ✅ Mesajınız başarıyla gönderildi!
+                </p>
+            </form>
+        </div> <div class="tanitim-resmi">  
+             <img src="../Resimler/iletişimsaydasıfoto.jpg" alt="Bugraull_" class="resim-linkli" width="450" height="650">
+             <a href="mailto:info@sporsitesi.com" style="display: block; text-align: center; margin-top: 10px; color: #e50914;">E-posta Gönder</a>
+        </div>
+        
+    </div> <footer>
+        <div class="footerIcerik">
+            <p>&copy; 2025 Spor Haber Portalı. Tüm Hakları Saklıdır.</p>
+            <p>Bu site Bugraull_ tarafından proje ödevi için tasarlanmıştır.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script> 
+</body>
+</html>

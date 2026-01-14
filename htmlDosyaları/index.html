@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="futbol, spor, transfer, süper lig">
+    <meta name="description" content="En güncel spor ve transfer haberleri.">
+    <title>🏆 B-SPORT </title>
+
+    <div id="tmAramaKapsayici">
+    <div class="arama-kutusu">
+        <input type="text" id="tmInput" placeholder="Futbolcu Adı Girin (Örn: Osimhen)" onkeypress="enterileAra(event)">
+        <button onclick="transfermarktYonlendir()">TM Profiline Git ↗</button>
+    </div>
+    <p class="arama-bilgi">Resmi Transfermarkt® verilerine yönlendirir.</p>
+</div>
+
+    <link rel="stylesheet" href="../style.css"> 
+    </head>
+<body>
+
+    <div id="header">
+        <h1>B-SPORT ANA SAYFA</h1>
+    </div>
+
+    <nav id="ustMenu">
+        <ul class="menu">
+            <li><a href="http://127.0.0.1:5500/htmlDosyalar%C4%B1/Ana%20Sayfa.html">ANA SAYFA</a></li>
+            
+            <li class="alt-menulu">
+                <a href="http://127.0.0.1:5500/htmlDosyalar%C4%B1/s%C3%BCperlig.html">SÜPER LİG</a>
+                <ul class="alt-menu">
+                    <li><a href="http://127.0.0.1:5500/htmlDosyalar%C4%B1/fikst%C3%BCr.html">Fikstür</a></li>
+                    <li><a href="http://127.0.0.1:5500/htmlDosyalar%C4%B1/puan%20durumu.html">Puan Durumu</a></li>
+                </ul>
+            </li>
+            <li><a href="http://127.0.0.1:5500/htmlDosyalar%C4%B1/Avrupa%20Kupalar%C4%B1.html">AVRUPA KUPALARI</a></li>
+            <li><a href="http://127.0.0.1:5500/htmlDosyalar%C4%B1/Galeri.html">FOTOĞRAF GALERİSİ</a></li>
+            <li><a href="http://127.0.0.1:5500/htmlDosyalar%C4%B1/ileti%C5%9Fim.html">İLETİŞİM</a></li>
+        </ul>
+    </nav>
+    
+    <div id="anaIcerik">
+        <h2 class="baslikKirmizi">TRANSFER HABERLERİ</h2> 
+
+    <div class="site-arama-container">
+        <input type="text" id="siteAramaInput" onkeyup="siteIciHaberAra()" placeholder="Haber Ara (Örn:Beşiktaş)">
+    </div>
+        <div id="haberListesi"> 
+            
+            <div class="haberKarti">
+                <h3><a href="http://127.0.0.1:5500/htmlDosyalar%C4%B1/kante.html">Kanarya'da Kante Atağı.</a></h3>
+                <img src="../Resimler/kante.jpg" alt="N'golo Kante">
+            </div>   
+
+            <div class="haberKarti">
+                <h3> <a href="http://127.0.0.1:5500/htmlDosyalar%C4%B1/konyaspor.html">Konyaspor'dan Yerli Hücumu!..</a></h3>
+                    <img src="../Resimler/konyaspor_transfer.jpg" alt="Anadolu Kartalı Kesenin Ağzını Açtı.">
+            </div>
+                        <div class="haberKarti">
+                <h3> <a href="http://127.0.0.1:5500/htmlDosyalar%C4%B1/be%C5%9Fikta%C5%9F'ta_ara_transfer.html">Kartal'da Transfer Hareketliliği.</a></h3>
+                    <img src="../Resimler/emrecan.jpg" alt="Emre Can">
+            </div>
+                        <div class="haberKarti">
+                <h3> <a href="http://127.0.0.1:5500/htmlDosyalar%C4%B1/samsunspor.html">Samsunspor'da Ryan Kent Denemesi...</a></h3>
+                    <img src="../Resimler/kent2.jpg" alt="Ryan Kent">
+            </div>
+                        <div class="haberKarti">
+                <h3> <a href="http://127.0.0.1:5500/htmlDosyalar%C4%B1/Galatasaray.html">Galatasaray'da Arias Kovalamacası.</a></h3>
+                    <img src="../Resimler/arias2.jpg" alt="John Arias">
+            </div>
+            <div class="haberKarti">
+                <h3> <a href="http://127.0.0.1:5500/htmlDosyalar%C4%B1/g%C3%B6ztepe.html">Göztepe'nin Yeni 10 Numarası.</a></h3>
+                    <img src="../Resimler/antunes2.png " alt="Antunes">
+            </div>
+            <div class="haberKarti">
+                <h3> <a href="http://127.0.0.1:5500/htmlDosyalar%C4%B1/musaba.html">Musaba Sarı-Lacivert Yolunda</a></h3>
+                    <img src="../Resimler/musaba.jpg" alt="Antony Musaba">
+            </div>
+            
+            <div class="haberKarti">
+                <h3> <a href="http://127.0.0.1:5500/htmlDosyalar%C4%B1/Trabzonspor'da%20scout%20transferleri.html">Trabzonspor'dan Scout Transferleri.</a></h3>
+                <img src="../Resimler/oulai2.jpg" alt="Christ İnao Oulai">
+            </div>
+            
+            <div class="haberKarti">
+                <h3><a href="http://127.0.0.1:5500/htmlDosyalar%C4%B1/Fenerbah%C3%A7e'de%20y%C4%B1ld%C4%B1z%20bombalar%C4%B1.html">Fenerbahçe'de Yaz Transfer Gündemi</a></h3>
+                <img src="../Resimler/asensio.jpg" alt="Marco Asensio Kanarya'da">
+            </div>
+            
+            <div class="haberKarti">
+                <h3><a href="http://127.0.0.1:5500/htmlDosyalar%C4%B1/Orkun%20K%C3%B6k%C3%A7%C3%BC%20%C3%87ocukluk%20A%C5%9Fk%C4%B1nda.html">Orkun Kökçü Çocukluk Aşkında...</a></h3>
+                <img src="../Resimler/Orkun kökçü beşiktaş.jpg" alt="Orkun Kökçü İmza Töreni">
+            </div>
+            
+            <div class="haberKarti">
+                <h3><a href="http://127.0.0.1:5500/htmlDosyalar%C4%B1/trabzonspor'da%20Ta%20Bi%20hAREKETL%C4%B0L%C4%B0%C4%9E%C4%B0.html">Trabzonspor'da İsrail Liginden Ta-Bi.</a></h3>
+                <img src="../Resimler/ta-bi_kapak.jpg" alt="Ta-Bi">
+            </div>
+          
+
+        </div>
+
+    <footer>
+        <div class="footerIcerik">
+            <p>&copy; 2025 Spor Haber Portalı. Tüm Hakları Saklıdır.</p>
+            <p>Bu site Bugraull_ tarafından proje ödevi için tasarlanmıştır.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script> 
+</body>
+</html>
